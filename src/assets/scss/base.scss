@@ -1,0 +1,68 @@
+@import './mixin.scss';
+.container{
+  position: relative;
+  width: 1226px;
+  margin-right: auto;
+  margin-left: auto;
+}
+a{
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+input{
+  outline: none;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clearfix:before,.clearfix:after{
+  content: '';
+  display: table;
+}
+// 这样可以用在任何你想添加浮动的位置里面去添加class,以此达到清除的目的
+.clearfix:after{
+  clear: both;
+}
+// 公共logo
+.header-logo{
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  background-color: #ff6600;
+  a{
+    display: inline-block;
+    width: 110px; //这里是55*2，因为要放两张图片
+    height: 55px;
+    // 这里要加上切片符，而且图片要占位，因为没有内容
+    &:before{
+      content: ' ';
+      @include bgImg(55px,55px,'/imgs/mi-logo.png',55px);
+      transition: margin .2s;  //第一个表示需要哪个属性进行过渡
+      // display: inline-block;
+      // width: 55px;
+      // height: 55px;
+      // background: url('/imgs/mi-logo.png') no-repeat center;
+      // background-size: 55px;
+    }
+    &:after{
+      content: ' ';
+      @include bgImg(55px,55px,'/imgs/mi-home.png',55px);
+      // display: inline-block;
+      // width: 55px;
+      // height: 55px;
+      // background: url('/imgs/mi-home.png') no-repeat center;
+      // background-size: 55px;
+    } 
+    &:hover:before{
+      margin-left: -55px;
+      transition: margin .2s; 
+    }
+  }
+}

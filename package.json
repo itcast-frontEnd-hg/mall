@@ -1,0 +1,85 @@
+{
+  "name": "mall",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve --mode=development",
+    "test": "vue-cli-service build --mode=test",
+    "build": "vue-cli-service build --mode=production",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "babel-plugin-component": "^1.1.1",
+    "babel-preset-es2015": "^6.24.1",
+    "core-js": "^3.6.4",
+    "element-ui": "^2.13.1",
+    "inspector": "^0.5.0",
+    "mockjs": "^1.1.0",
+    "node-sass": "^4.14.1",
+    "qrcode": "^1.4.4",
+    "sass-loader": "^8.0.2",
+    "stylus-loader": "^3.0.2",
+    "vue": "^2.6.11",
+    "vue-awesome-swiper": "^3.1.3",
+    "vue-axios": "^2.1.5",
+    "vue-cookie": "^1.1.4",
+    "vue-infinite-scroll": "^2.0.2",
+    "vue-lazyload": "^1.3.3",
+    "vue-router": "^3.1.6",
+    "vuex": "^3.1.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.0.0",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "axios": "^0.20.0",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.0.0",
+    "babel-plugin-component": "^1.1.1",
+    "element-ui": "^2.14.1",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "jsonp": "^0.2.1",
+    "mockjs": "^1.1.0",
+    "sass-loader": "^10.0.4",
+    "swiper": "^5.4.5",
+    "vue-loader": "^15.9.5",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.44.2",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "description": "## Project setup ``` npm install ```",
+  "main": "babel.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itcast-frontEnd-hg/mall.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itcast-frontEnd-hg/mall/issues"
+  },
+  "homepage": "https://github.com/itcast-frontEnd-hg/mall#readme"
+}
